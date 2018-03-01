@@ -1,0 +1,103 @@
+body {
+background: url("../img/img.JPG");
+width: auto;
+height: auto;
+}
+
+.container div{
+	background: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 10px;
+	text-align: center;
+	height: auto;
+}
+.container{
+	background: #fff;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 10px;
+	text-align: center;
+	
+}
+
+
+h1{
+font-family: fantasy;
+}
+
+h2{
+font-size: 25px;
+}
+
+
+.navbar{
+
+margin-bottom: 80px;
+padding-top: 20px;
+background-color: darkorange;
+
+}
+
+.plakat{
+width: 65%;
+min-width: 905px;
+height: 350px;
+margin: auto;
+padding: 10px;
+background-color: lightgray;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 10px;
+border: 1px solid #666;
+}
+
+.brand{
+font-size: 25px;
+margin-left: 20px;
+}
+
+#get{
+Font-size: 15px;
+}
+
+textarea{
+width: 70%;
+resize: none;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 10px;
+border: 1px solid #666;
+text-align:  center;
+}
+
+
+.btn{
+width: auto;
+margin: auto;
+margin-bottom: 10px;
+}
+
+.form-control{
+width: 90%;
+margin: auto;
+margin-bottom: 10px;
+}
+
+a{
+display: inline-block;
+float: left;
+color: white;
+font-size: 20px;
+font-family: Tahoma;
+}
+
+a:hover{
+color: white;
+}
+
+li.bar{
+list-style-type: none;
+}
+

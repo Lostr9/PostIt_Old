@@ -1,0 +1,28 @@
+{
+  "name": "Post_It",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "body-parser": "^1.10.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.3.3",
+    "ejs": "~2.3.3",
+    "express": "^4.11.1",
+    "express-session": "^1.10.1",
+    "mongoose": "^4.4.1",
+    "morgan": "~1.9.0",
+    "passport": "^0.2.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^1.0.0",
+    "request": "^2.72.0",
+    "serve-favicon": "^2.2.0"
+  }
+}

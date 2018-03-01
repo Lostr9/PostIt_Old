@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/set.css" rel="stylesheet">
+  </head>
+     <body>
+      <div class="navbar">
+       
+        <a href="/" class="brand">Post IT!</a>
+	 
+	   <div class="container-fluid">
+	   <div class="row" style="float:right">
+	 
+		<div class="col-lg-4 col-md-4 col-sm-4"><a href="/contacts">Контакты</a></div>
+		<div class="col-lg-4 col-md-4 col-sm-4"><a href="/profile" >Профиль</a></div>
+	  	<div class="col-lg-4 col-md-4 col-sm-4"><a href="/logout" >Выйти</a></div>
+		   </div>
+      </div>
+     </div>
+ 
+   
+     	<form method="post">
+     		
+     			<% for(i in posts){ %>
+     				<div class="container" style="height:300px;width:400px;">
+     					<h2>Ваш пост: </h2><!--Дата поста-->
+     					<textarea disabled style="height:200px">Текст: <%= posts[i][0] %>
+    Дата создаия: <%= posts[i][5]%>
+Сети в которых был размещён пост: 
+    Twitter: <%= posts[i][1]%>
+    Facebook: <%= posts[i][2]%>
+    ВКонтакте: <%= posts[i][3]%></textarea><!--Текст поста-->
+     				</div>
+     			<% } %>
+		</form>
+    	
+	</body>
+</html>

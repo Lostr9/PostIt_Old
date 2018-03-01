@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/set.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+<script type="text/javascript">
+function showHide (id)
+{
+var style = document.getElementById(id).style
+if (style.visibility == "hidden")
+style.visibility = "visible";
+else
+style.visibility = "hidden";
+} 
+  </script>
+  </head>
+
+ <body>
+	<div class="navbar">
+       
+        <a href="/" class="brand">Post IT!</a>
+	 
+	   <div class="container-fluid">
+	   <div class="row" style="float:right">
+	 
+		
+		<div class="col-lg-4 col-md-4 col-sm-4"><a href="/contacts">Контакты</a></div>
+		<div class="col-lg-4 col-md-4 col-sm-4"><a href="/profile" >Профиль</a></div>
+	  	<div class="col-lg-4 col-md-4 col-sm-4"><a href="/logout" >Выйти</a></div>
+		   </div>
+      </div>
+     </div>
+   <div class="container" style="padding-top:30px; padding-bottom:10px">
+   <div class="row">
+	 <form method="post">
+	   <div class="col-lg-6"><textarea placeholder="Тут Ваш 'Post'" name="text" style="min-width: 480px; height: 200px; margin-bottom: 20px"></textarea></div>
+
+	   		
+		   		<div class="col-lg-6">В текстовом поле напишите сам Пост.<br>
+				Выберете соц. сеть и нажмите кноку "Post it".<br><br>
+				<font color="blue">Примечание:Размер текста не должен превышать<br>
+				размеров допустимого текста каждой отдельной соц. сети.<br></font></div></div>
+	   		
+	   
+	   			<div class="row">
+					<div class="col-lg-2 col-md-2 col-sm-2"><span class="fa fa-vk fa-5x"></span></a>
+						<input type="checkbox" name="VK" value="true" style="float:left"></div>
+				
+					<div class="col-lg-2 col-md-2 col-sm-2"><span class="fa fa-twitter fa-5x"></span></a>
+						<input type="checkbox" name="TT" value="true" style="float:left"></div>
+				
+					<div class="col-lg-2 col-md-2 col-sm-2"><span class="fa fa-facebook fa-5x"></span></a>
+						<input type="checkbox" name="FB" value="true" style="float:left"></div>
+				
+					<div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2"><button class="btn btn-lg btn-primary " type="submit" style="float:left">Post IT!</button></div>
+					
+	 				<div class="col-lg-2 col-md-2">
+	 				
+	 				<input type="checkbox" onclick="showHide('date/time');" /> Запостить потом 
+					<div id="date/time" style="visibility:hidden"> 
+					<input type="date" id="date" name="date" class="tcal"> 
+					<input type="time" id="time" name="time" class="tcal"></div></div></div>
+</form>
+	 </div>
+ </body>
+</html>
